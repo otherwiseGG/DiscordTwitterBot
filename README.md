@@ -56,8 +56,8 @@ twitterAccessTokenKey and copy the “Access token secret” into config.json.
 
 • The following is an array, so you can follow multiple people, so the value may look like
 [“twitter-a”] or [“twitter-a”,”twitter-b”] or even [“<twittera”,”twitter-b”,”twitter-c”]. These values however must be the user’s ID, which 
-you can find at https://tweeterid.com/ – so for example, @macroaistech is
-1279202409403777024
+you can find at https://tweeterid.com/ – so for example, @ESLotherwise is
+4293668297
 
 
 • The channelsToPost is also an array like following. To find these values, make sure you
