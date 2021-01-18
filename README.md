@@ -1,5 +1,5 @@
 [![GPL Licence](https://badges.frapsoft.com/os/gpl/gpl.svg?v=103)](https://github.com/otherwiseDE/DiscordTwitterBot/blob/main/LICENSE)
-[![Discord Server](https://discordapp.com/api/guilds/794406857937649676/embed.png)](https://discord.gg/cuFdnjE4mg)
+![Discord Shield](https://discordapp.com/api/guilds/794406857937649676/widget.png?style=shield)
 
 # otherwiseDE's Twitter Bot!
 
