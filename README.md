@@ -5,6 +5,12 @@ Welcome and Thanks for your interest in my Discord Twitter Bot Project.
 Please read this File completly to not miss out on Information.
 
 
+# Preview
+
+![image](https://user-images.githubusercontent.com/77602833/104952863-9f3df800-59c5-11eb-90b8-18199303a4d6.png)
+
+
+
 # Dependencies
 You will need:
 
