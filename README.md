@@ -7,6 +7,11 @@ Please read this File completly to not miss out on Information.
 To receive Support from me, Join my [Discord](https://discord.gg/WVzJZfr9Q5) and head to `#github-support`
 
 
+# Preview
+
+![image](https://user-images.githubusercontent.com/77602833/104952863-9f3df800-59c5-11eb-90b8-18199303a4d6.png)
+
+
 # Dependencies
 You will need:
 
@@ -51,5 +56,3 @@ You will need to have access to Twitter Developer, and create an application in 
  - The title is the title of what you want to come up, so for example “New Tweet”
  - The colour is the colour that the line is, so for example #1A91DA is the Twitter Blue
 
-
-![image](https://user-images.githubusercontent.com/77602833/104952863-9f3df800-59c5-11eb-90b8-18199303a4d6.png)
