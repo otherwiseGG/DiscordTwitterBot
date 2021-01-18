@@ -42,7 +42,7 @@ for(var i = 0;i<track.length;i++){
 // Functions
 function chatPost(content,author,url,time,authorPfp,media){
     let channels = config.channelsToPost;
-    const message = new Discord.MessageEmbed().setTitle(config.title).setColor(config.colour).setDescription(content).setAuthor(`@${author}`,authorPfp,`https://twitter.com/${author}`).setFooter(`Twitter - ${time}`,"https://abs.twimg.com/favicons/twitter.ico").setURL(url);
+    const message = new Discord.MessageEmbed().setTitle(config.title).setColor(config.colour).setDescription(content).setAuthor(`@${author}`,authorPfp,`https://twitter.com/${author}`).setFooter(`Twitter - ${time} - Made by otherwise#1626`,"https://abs.twimg.com/favicons/twitter.ico").setURL(url);
     if(media==undefined||media==null||media==0||media==false){
         // Nothing...
     } else {
