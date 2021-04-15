@@ -6,7 +6,7 @@ Hey.
 Welcome and Thanks for your interest in my Discord Twitter Bot Project.
 Please read this File completly to not miss out on Information.
 
-To receive Support from me, Join my [Discord](https://discord.gg/WVzJZfr9Q5) and head to `#github-support` and monitor `#github-updates` for any updates!
+To receive Support from me, Join my [Discord](https://discord.gg/gFP5N6YCbQ) and head to `#support` and monitor `#github-feeds` for any updates!
 
 
 # Preview
