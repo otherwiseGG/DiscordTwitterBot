@@ -1,0 +1,7 @@
+{
+  "dependencies": {
+    "discord.js": "^13.3.1",
+    "fs": "^0.0.1-security",
+    "node-tweet-stream": "^2.1.0"
+  }
+}

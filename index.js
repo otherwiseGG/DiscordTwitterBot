@@ -1,5 +1,5 @@
 // Packages
-const Discord = require("discord.js");
+const { Discord, Client, Collection, Message, MessageEmbed } = require("discord.js");
 const Twit = require("node-tweet-stream");
 const fs = require("fs");
 
@@ -16,7 +16,7 @@ const t = new Twit({
     token:config.twitterAccessTokenKey,
     token_secret:config.twitterAccessTokenSecret
 });
-const dClient = new Discord.Client();
+const dClient = new Client({ intents: 32767 });
 dClient.login(config.discordBotToken);
 
 // Success
@@ -41,16 +41,9 @@ for(var i = 0;i<track.length;i++){
 
 // Functions
 function chatPost(content,author,url,time,authorPfp,media){
-    let channels = config.channelsToPost;
-    const message = new Discord.MessageEmbed().setTitle(config.title).setColor(config.colour).setDescription(content).setAuthor(`@${author}`,authorPfp,`https://twitter.com/${author}`).setFooter(`Twitter - ${time} - Made by otherwise#1626`,"https://abs.twimg.com/favicons/twitter.ico").setURL(url);
-    if(media==undefined||media==null||media==0||media==false){
-        // Nothing...
-    } else {
-        for(var j = 0; j<media.length;j++){
-            message.setImage(media[j].media_url)
-        }
-    }
-    for(var i = 0; i<channels.length; i++){
-        dClient.channels.cache.get(channels[i]).send(message);
-    }
+    const message = new MessageEmbed().setTitle(config.title).setColor(config.colour).setDescription(content).setAuthor(`@${author}`,authorPfp,`https://twitter.com/${author}`).setFooter(`Twitter - ${time} - Made by otherwise#5109`,"https://abs.twimg.com/favicons/twitter.ico").setURL(url);
+
+    if (!!media) for(var j = 0; j<media.length;j++) message.setImage(media[j].media_url);
+
+    for(const __channel of config.channelsToPost.map(x => dClient.channels.cache.get(x))) __channel.send({ embeds: [message] });
 }
