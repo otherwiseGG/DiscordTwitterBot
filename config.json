@@ -1,11 +1,15 @@
 {
-    "discordBotToken":"",
-    "twitterConsumerKey":"",
-    "twitterConsumerSecret":"",
-    "twitterAccessTokenKey":"",
-    "twitterAccessTokenSecret":"",
-    "following":[""],
-    "channelsToPost":[""],
-    "title":"New Tweet",
-    "colour":"#1A91DA"
+  "discordBotToken": "",
+  "twitterConsumerKey": "",
+  "twitterConsumerSecret": "",
+  "twitterAccessTokenKey": "",
+  "twitterAccessTokenSecret": "",
+  "following": [
+    ""
+  ],
+  "channelsToPost": [
+    ""
+  ],
+  "title": "New Tweet",
+  "colour": "#1A91DA"
 }
