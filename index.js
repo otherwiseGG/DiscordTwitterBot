@@ -36,6 +36,7 @@ let track = config.following;
 for (var i = 0; i < track.length; i++) {
     t.follow(track[i]);
     console.log(`Following Twitter User [ID]${track[i]}`)
+    console.log(`For Support please join https://discord.gg/PrGCCWpDbP`)
 }
 
 
