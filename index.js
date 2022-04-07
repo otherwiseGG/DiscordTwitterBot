@@ -41,7 +41,7 @@ for (var i = 0; i < track.length; i++) {
 
 // Functions
 function chatPost(content, author, url, time, authorPfp, media) {
-    const message = new MessageEmbed().setTitle(config.title).setColor(config.colour).setDescription(content).setAuthor(`@${author}`, authorPfp, `https://twitter.com/${author}`).setFooter(`Twitter - ${time} - Made by otherwise#5109`, "https://abs.twimg.com/favicons/twitter.ico").setURL(url);
+    const message = new MessageEmbed().setTitle(config.title).setColor(config.colour).setDescription(content).setAuthor(`@${author}`, authorPfp, `https://twitter.com/${author}`).setFooter(`Twitter - ${time}`, "https://abs.twimg.com/favicons/twitter.ico").setURL(url);
 
     if (!!media) for (var j = 0; j < media.length; j++) message.setImage(media[j].media_url);
 
