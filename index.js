@@ -1,3 +1,6 @@
+console.clear();
+console.log(`[TWITTER] Starting Service`);
+
 // Packages
 const {Discord, Client, Collection, Message, MessageEmbed} = require("discord.js");
 const Twit = require("node-tweet-stream");
@@ -21,7 +24,7 @@ dClient.login(config.discordBotToken);
 
 // Success
 dClient.on('ready', () => {
-    console.log(`Connected to Discord as ${dClient.user.tag}`);
+    console.log(`[TWITTER] Service Started`);
 });
 
 // Tweet Listener + Post
@@ -35,7 +38,7 @@ t.on('error', function (err) {
 let track = config.following;
 for (var i = 0; i < track.length; i++) {
     t.follow(track[i]);
-    console.log(`Following Twitter User [ID]${track[i]}`)
+    console.log(`[TWITTER] Following Twitter User [ID]${track[i]}`)
     console.log(`For Support please join https://discord.gg/PrGCCWpDbP`)
 }
 
