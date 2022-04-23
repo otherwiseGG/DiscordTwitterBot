@@ -16,13 +16,10 @@ const config = JSON.parse(fs.readFileSync("./config.json", "utf8"));
 
 // Clients
 const t = new Twit({
-    consumer_key: config.twitterConsumerKey,
-    consumer_secret: config.twitterConsumerSecret,
-    //app_only_auth:true,
+    consumer_key: config.twitterConsumerKey, consumer_secret: config.twitterConsumerSecret, //app_only_auth:true,
     //access_token_key:config.twitterAccessTokenKey,
     //access_token_secret:config.twitterAccessTokenSecret
-    token: config.twitterAccessTokenKey,
-    token_secret: config.twitterAccessTokenSecret
+    token: config.twitterAccessTokenKey, token_secret: config.twitterAccessTokenSecret
 });
 const dClient = new Client({intents: 32767});
 dClient.login(config.discordBotToken);
@@ -35,7 +32,16 @@ dClient.on('ready', () => {
 // Tweet Listener + Post
 t.on('tweet', function (tweet) {
     let media = tweet.entities.media;
-    chatPost(tweet.text, tweet.user.screen_name, `https://twitter.com/${tweet.user.screen_name}/status/${tweet.id_str}`, moment.utc(tweet.created_at).tz('Europe/Berlin').format('DD-MM-YYYY HH:mm:ss'), tweet.user.profile_image_url, media);
+    //Debug
+    //console.log(tweet.user.id == config.following);
+    //console.log(tweet.user.screen_name === 'ESLotherwise');
+
+    //Parse config.json, double check if the Object is owned by the Tweet Creator and post it - if not, ignore.
+    config.followingUser.forEach(user => {
+        if (tweet.user.id == user.id && tweet.user.screen_name === user.name) {
+            chatPost(tweet.text, tweet.user.screen_name, `https://twitter.com/${tweet.user.screen_name}/status/${tweet.id_str}`, moment.utc(tweet.created_at).tz('Europe/Berlin').format('DD-MM-YYYY HH:mm:ss'), tweet.user.profile_image_url, media);
+        }
+    })
 })
 t.on('error', function (err) {
     console.log('Oh no')
@@ -44,7 +50,7 @@ let track = config.following;
 for (var i = 0; i < track.length; i++) {
     t.follow(track[i]);
     console.log(`[TWITTER] Following Twitter User [ID]${track[i]}`)
-    console.log(`For Support please join https://discord.gg/PrGCCWpDbP`)
+    //console.log(`For Support please join https://discord.gg/PrGCCWpDbP`)
 }
 
 

@@ -4,8 +4,11 @@
   "twitterConsumerSecret": "",
   "twitterAccessTokenKey": "",
   "twitterAccessTokenSecret": "",
-  "following": [
-    ""
+  "followingUser": [
+    {
+      "id": "",
+      "name": ""
+    }
   ],
   "channelsToPost": [
     ""
