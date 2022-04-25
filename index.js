@@ -51,7 +51,7 @@ track.forEach(user => {
     t.follow(user.id);
     console.log(`[TWITTER] Following Twitter User @${user.name}`);
     console.log(`For Support please join https://discord.gg/PrGCCWpDbP`)
-}
+});
 
 
 // Functions
