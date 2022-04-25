@@ -46,10 +46,10 @@ t.on('tweet', function (tweet) {
 t.on('error', function (err) {
     console.log('Oh no')
 })
-let track = config.following;
-for (var i = 0; i < track.length; i++) {
-    t.follow(track[i]);
-    console.log(`[TWITTER] Following Twitter User [ID]${track[i]}`)
+let track = config.followingUser;
+track.forEach(user => {
+    t.follow(user.id);
+    console.log(`[TWITTER] Following Twitter User @${user.name}`);
     console.log(`For Support please join https://discord.gg/PrGCCWpDbP`)
 }
 
