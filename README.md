@@ -9,6 +9,7 @@ Please read this File completly to not miss out on Information.
 To receive Support from me, Join my [Discord](https://discord.gg/PrGCCWpDbP) and head to `#support` and monitor `#github-feeds` for any updates!
 
 
+
 # Preview
 
 ![image](https://user-images.githubusercontent.com/77602833/104952863-9f3df800-59c5-11eb-90b8-18199303a4d6.png)
@@ -30,6 +31,7 @@ You will need:
  - `npm i fs`
 
 Please do each line at one time, this shouldn’t take more than a minute.
+PLEASE NOTE THAT YOU NEED TO APPLY FOR ELEVATED ACCESS IN THE TWITTER DEVELOPER CONSOLE
 
 ## Configuration (config.json)
 
