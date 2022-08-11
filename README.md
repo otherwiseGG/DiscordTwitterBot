@@ -1,3 +1,6 @@
+# Project no longer maintained and no Support given
+
+
 [![GPL Licence](https://badges.frapsoft.com/os/gpl/gpl.svg?v=103)](https://github.com/otherwiseDE/DiscordTwitterBot/blob/main/LICENSE)
 
 # otherwiseDE's Twitter Bot!
